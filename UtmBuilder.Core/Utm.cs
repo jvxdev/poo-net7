@@ -21,6 +21,9 @@ public class Utm
     /// </summary>
     public Campaign Campaign { get; }
 
+    //CONVERT UM UTM PARA STRING
+    public static implicit operator string(Utm utm) => utm.ToString();
+
     public override string ToString()
     {
         var segments = new List<string>();
