@@ -598,6 +598,16 @@
             "related": ".xml"
           }
         }
+      },
+      "UtmBuilder.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/UtmBuilder.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UtmBuilder.Core.dll": {}
+        }
       }
     }
   },
@@ -2292,6 +2302,11 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "UtmBuilder.Core/1.0.0": {
+      "type": "project",
+      "path": "../UtmBuilder.Core/UtmBuilder.Core.csproj",
+      "msbuildProject": "../UtmBuilder.Core/UtmBuilder.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2299,6 +2314,7 @@
       "MSTest.TestAdapter >= 2.2.10",
       "MSTest.TestFramework >= 2.2.10",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
+      "UtmBuilder.Core >= 1.0.0",
       "coverlet.collector >= 3.2.0"
     ]
   },
@@ -2328,7 +2344,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\dev\\UtmBuilder\\UtmBuilder.Core\\UtmBuilder.Core.csproj": {
+              "projectPath": "C:\\dev\\UtmBuilder\\UtmBuilder.Core\\UtmBuilder.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
